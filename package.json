@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bull": "^4.1.1",
     "elasticsearch": "^16.7.2",
     "express": "^4.17.1"
   },

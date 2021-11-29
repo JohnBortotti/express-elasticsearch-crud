@@ -27,6 +27,14 @@ services:
     networks:
       - app-network
 
+  redis:
+    image: redis
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+
+
 networks:
   app-network:
     name: vivex_network
@@ -34,4 +42,6 @@ networks:
 
 volumes:
   esdata:
+    driver: local
+  redis-data:
     driver: local

@@ -24,4 +24,4 @@ updatePost = query => {
 }
 
 
-module.exports = { searchPosts, createPost, deletePost, getPostById }
+module.exports = { searchPosts, createPost, deletePost, getPostById, updatePost }

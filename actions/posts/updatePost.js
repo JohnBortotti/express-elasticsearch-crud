@@ -1,7 +1,7 @@
-const esClient = require('../../config/esClient');
+const repository = require('../../repositories/posts/elasticSearch');
 
 updatePost = (req, res) => {
-  esClient.update({
+  repository.updatePost({
     index: 'posts',
     id: req.params.id,
     body: {
